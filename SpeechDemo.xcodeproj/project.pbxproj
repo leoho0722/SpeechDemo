@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0A49A212BA48AF8002B73FB /* SpeechDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A49A202BA48AF8002B73FB /* SpeechDemoApp.swift */; };
+		D0A49A232BA48AF8002B73FB /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A49A222BA48AF8002B73FB /* SpeechView.swift */; };
+		D0A49A252BA48AF9002B73FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A49A242BA48AF9002B73FB /* Assets.xcassets */; };
+		D0A49A282BA48AF9002B73FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A49A272BA48AF9002B73FB /* Preview Assets.xcassets */; };
+		D0A49A322BA48B90002B73FB /* SwiftHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = D0A49A312BA48B90002B73FB /* SwiftHelpers */; };
+		D0A49A362BA48C0D002B73FB /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A49A352BA48C0D002B73FB /* SpeechManager.swift */; };
+		D0A49A382BA48C56002B73FB /* SFSpeechRecognizer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A49A372BA48C56002B73FB /* SFSpeechRecognizer+Extensions.swift */; };
+		D0A49A3A2BA49B89002B73FB /* AVAudioNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A49A392BA49B89002B73FB /* AVAudioNode+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0A49A1D2BA48AF8002B73FB /* SpeechDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A49A202BA48AF8002B73FB /* SpeechDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDemoApp.swift; sourceTree = "<group>"; };
+		D0A49A222BA48AF8002B73FB /* SpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
+		D0A49A242BA48AF9002B73FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0A49A272BA48AF9002B73FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0A49A352BA48C0D002B73FB /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		D0A49A372BA48C56002B73FB /* SFSpeechRecognizer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSpeechRecognizer+Extensions.swift"; sourceTree = "<group>"; };
+		D0A49A392BA49B89002B73FB /* AVAudioNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioNode+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0A49A1A2BA48AF8002B73FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A49A322BA48B90002B73FB /* SwiftHelpers in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0A49A142BA48AF8002B73FB = {
+			isa = PBXGroup;
+			children = (
+				D0A49A1F2BA48AF8002B73FB /* SpeechDemo */,
+				D0A49A1E2BA48AF8002B73FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0A49A1E2BA48AF8002B73FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A1D2BA48AF8002B73FB /* SpeechDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0A49A1F2BA48AF8002B73FB /* SpeechDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A202BA48AF8002B73FB /* SpeechDemoApp.swift */,
+				D0A49A342BA48BFC002B73FB /* Extensions */,
+				D0A49A332BA48BF5002B73FB /* Managers */,
+				D0A49A2E2BA48B1D002B73FB /* Views */,
+				D0A49A2F2BA48B2E002B73FB /* Resources */,
+				D0A49A262BA48AF9002B73FB /* Preview Content */,
+			);
+			path = SpeechDemo;
+			sourceTree = "<group>";
+		};
+		D0A49A262BA48AF9002B73FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A272BA48AF9002B73FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0A49A2E2BA48B1D002B73FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A222BA48AF8002B73FB /* SpeechView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0A49A2F2BA48B2E002B73FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A242BA48AF9002B73FB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0A49A332BA48BF5002B73FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A352BA48C0D002B73FB /* SpeechManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D0A49A342BA48BFC002B73FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0A49A372BA48C56002B73FB /* SFSpeechRecognizer+Extensions.swift */,
+				D0A49A392BA49B89002B73FB /* AVAudioNode+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0A49A1C2BA48AF8002B73FB /* SpeechDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A49A2B2BA48AF9002B73FB /* Build configuration list for PBXNativeTarget "SpeechDemo" */;
+			buildPhases = (
+				D0A49A192BA48AF8002B73FB /* Sources */,
+				D0A49A1A2BA48AF8002B73FB /* Frameworks */,
+				D0A49A1B2BA48AF8002B73FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechDemo;
+			packageProductDependencies = (
+				D0A49A312BA48B90002B73FB /* SwiftHelpers */,
+			);
+			productName = SpeechDemo;
+			productReference = D0A49A1D2BA48AF8002B73FB /* SpeechDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0A49A152BA48AF8002B73FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D0A49A1C2BA48AF8002B73FB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = D0A49A182BA48AF8002B73FB /* Build configuration list for PBXProject "SpeechDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0A49A142BA48AF8002B73FB;
+			packageReferences = (
+				D0A49A302BA48B90002B73FB /* XCRemoteSwiftPackageReference "SwiftHelpers" */,
+			);
+			productRefGroup = D0A49A1E2BA48AF8002B73FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0A49A1C2BA48AF8002B73FB /* SpeechDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0A49A1B2BA48AF8002B73FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A49A282BA48AF9002B73FB /* Preview Assets.xcassets in Resources */,
+				D0A49A252BA48AF9002B73FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0A49A192BA48AF8002B73FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A49A232BA48AF8002B73FB /* SpeechView.swift in Sources */,
+				D0A49A362BA48C0D002B73FB /* SpeechManager.swift in Sources */,
+				D0A49A3A2BA49B89002B73FB /* AVAudioNode+Extensions.swift in Sources */,
+				D0A49A382BA48C56002B73FB /* SFSpeechRecognizer+Extensions.swift in Sources */,
+				D0A49A212BA48AF8002B73FB /* SpeechDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0A49A292BA48AF9002B73FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0A49A2A2BA48AF9002B73FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0A49A2C2BA48AF9002B73FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeechDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 23JEQ2524P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "進行語音轉文字使用";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "進行語音轉文字使用";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leoho.SpeechDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0A49A2D2BA48AF9002B73FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeechDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 23JEQ2524P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "進行語音轉文字使用";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "進行語音轉文字使用";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leoho.SpeechDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0A49A182BA48AF8002B73FB /* Build configuration list for PBXProject "SpeechDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A49A292BA48AF9002B73FB /* Debug */,
+				D0A49A2A2BA48AF9002B73FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A49A2B2BA48AF9002B73FB /* Build configuration list for PBXNativeTarget "SpeechDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A49A2C2BA48AF9002B73FB /* Debug */,
+				D0A49A2D2BA48AF9002B73FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0A49A302BA48B90002B73FB /* XCRemoteSwiftPackageReference "SwiftHelpers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/leoho0722/SwiftHelpers.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0A49A312BA48B90002B73FB /* SwiftHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0A49A302BA48B90002B73FB /* XCRemoteSwiftPackageReference "SwiftHelpers" */;
+			productName = SwiftHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D0A49A152BA48AF8002B73FB /* Project object */;
+}
